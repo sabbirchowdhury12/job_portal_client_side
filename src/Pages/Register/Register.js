@@ -37,29 +37,31 @@ const Register = () => {
 
     return (
         <div className='flex items-center justify-center h-screen p-5'>
-            <div className='shadow-lg bg-lime-50 p-10 text-center'>
+            <div className='shadow-lg bg-blue-900 p-10 text-center text-white'>
                 <div className='pb-10'>
-                    <p >Sign Up </p>
-                    <p>Please Sign up to get full access</p>
+                    <p className='text-2xl font-bold' >Sign Up </p>
+
                 </div>
                 <form onSubmit={handleSubmit} action="">
                     <label className="label">
-                        <span className="label-text">Full Name</span>
+                        <span >Full Name</span>
                     </label>
-                    <input type="text" name='name' placeholder="Enter Your Name" className="input input-bordered outline-none w-full" />
+                    <input type="text" name='name' placeholder="Enter Your Name" className="input input-bordered outline-none w-full text-black" />
                     <div className='py-5'>
                         <label className="label">
-                            <span className="label-text">Email</span>
+                            <span >Email</span>
                         </label>
-                        <input type="text" name='email' placeholder="Enter Your Email" className="input input-bordered outline-none w-full" />
+                        <input type="text" name='email' placeholder="Enter Your Email" className="input input-bordered outline-none w-full text-black" />
                     </div>
                     <label className="label">
-                        <span className="label-text">Password</span>
+                        <span className="">Password</span>
                     </label>
-                    <input type="text" name='password' placeholder="Enter Your Password" className="input input-bordered outline-none w-full" />
-                    <input type="submit" value='Sign up' />
+                    <input type="text" name='password' placeholder="Enter Your Password" className="input input-bordered outline-none w-full text-black" />
+                    <input type="submit" className='mt-5 bg-black py-2 px-5 rounded-sm font-bold' value='Sign up' />
                 </form>
-                <p className='py-10'>Already have an account? <Link to='/login'>Login</Link> here.</p>
+                <p className='py-10'>Already have an account? <Link to='/login'
+                    className='underline'
+                >Login</Link> here.</p>
             </div>
         </div>
     );

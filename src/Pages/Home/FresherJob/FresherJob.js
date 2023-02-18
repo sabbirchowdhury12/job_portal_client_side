@@ -27,10 +27,11 @@ const FresherJob = () => {
                                 <p>{job.job_location}</p>
                             </div>
                         </div>
-                        <button>Apply Now</button>
+                        <button className='text-white bg-blue-900 p-2 rounded-md'>Apply Now</button>
                     </div>;
                 })
             }
+            <button className='text-center font-bold block w-full  my-5 text-blue-900'>SEE ALL</button>
         </div>
     );
 };

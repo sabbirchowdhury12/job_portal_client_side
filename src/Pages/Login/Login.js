@@ -32,27 +32,26 @@ const Login = () => {
 
 
     return (
-        <div className='flex items-center justify-center h-screen p-5'>
-            <div className='shadow-lg bg-lime-50 p-10 text-center'>
+        <div className='flex items-center  justify-center h-screen p-5'>
+            <div className='shadow-lg bg-blue-900 p-10 text-center text-white'>
                 <div className='pb-10'>
-                    <p >Log In </p>
-                    <p>Please Login to get full access</p>
+                    <p className='text-2xl font-bold'>Log In </p>
                 </div>
                 <form action="" onSubmit={handleSubmit}>
 
                     <div className='py-5'>
                         <label className="label">
-                            <span className="label-text">Email</span>
+                            <span className="text-white">Email</span>
                         </label>
-                        <input type="text" name='email' placeholder="Enter Your Email" className="input input-bordered outline-none w-full" />
+                        <input type="text" name='email' placeholder="Enter  Your Email" className="input input-bordered outline-none w-full text-black" />
                     </div>
                     <label className="label">
-                        <span className="label-text">Password</span>
+                        <span className="text-white">Password</span>
                     </label>
-                    <input type="text" name='password' placeholder="Enter Your Password" className="input input-bordered outline-none w-full" />
-                    <input type="submit" value='Login' />
+                    <input type="text" name='password' placeholder="Enter Your Password" className="input input-bordered outline-none w-full text-black" />
+                    <input type="submit" className='mt-5 bg-black py-2 px-5 rounded-sm font-bold' value='Login' />
                 </form>
-                <p className='py-10'> Dont't have an account? <Link to='/login'>Sign Up</Link> here.</p>
+                <p className='py-10'> Dont't have an account? <Link to='/login' className='underline'>Sign Up</Link> here.</p>
             </div>
         </div>
     );

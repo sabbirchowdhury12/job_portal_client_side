@@ -29,7 +29,7 @@ const ITCompany = () => {
 
                                 </div>
                             </div>
-                            <button>Veiw Details</button>
+                            <button className='text-white bg-blue-900 p-2 rounded-md'>Veiw Details</button>
                         </div>;
                     })
                 }
